@@ -24,8 +24,8 @@
             <span>{{user.address}}</span>
           </div>
           <span
-            v-for="tag in tags"
-            :key="tag"
+            v-for="(tag, index) in tags"
+            :key="`${index}-${tag}`"
           >
             {{tag}}
           </span>
